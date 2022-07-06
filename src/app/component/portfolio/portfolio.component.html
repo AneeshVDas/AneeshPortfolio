@@ -1,0 +1,137 @@
+<hr>
+<hr>
+<!-- ======= Portfolio Section ======= -->
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Design Work
+            </h3>
+            <p class="subtitle-a">
+              Mobile Store, Interior Decoration and Press.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Mobile Store</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">06 July 2022</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Interior Design</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">10 Jan 2022</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Printing Press</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> / <span class="w-date">01 Jan 2022</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+<section>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active d-flex justify-content-center">
+            <img src="assets/img/1.jpeg" class="d-block w-50%" alt="First Image">
+        </div>
+        <div class="carousel-item d-flex justify-content-center">
+            <img src="assets/img/2.jpeg" class="d-block w-50%" alt="second Image">
+        </div>
+        <div class="carousel-item d-flex justify-content-center">
+            <img src="assets/img/3.jpeg" class="d-block w-50%" alt="third Image">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Previous</span> -->
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Next</span> -->
+    </button>
+</div>
+</section>
+<hr>
+<div class='card'>
+  <div class='card-header'>
+  </div>
+  
+  <div class='card-body'>            
+    <div class='table-responsive'>
+      <table class='table'
+            *ngIf = 'portfolio && portfolio.length'>
+        <tbody>  
+            <tr *ngFor='let product of portfolio'>
+                <td>{{ product.productName }}</td>
+                <!-- <td>{{ product.description }}</td> -->
+            </tr>              
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
